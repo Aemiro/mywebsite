@@ -1,4 +1,8 @@
-
+# Starter pipeline
+- task: NodeTool@0
+  inputs:
+    versionSpec: '6.x'
+    checkLatest: true
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -19,8 +23,3 @@ steps:
   displayName: 'Run a multi-line script'
   # Node.js tool installer
 # Finds or downloads and caches the specified version spec of Node.js and adds it to the PATH
-- # Starter pipeline
-- task: NodeTool@0
-  inputs:
-    versionSpec: '6.x'
-    checkLatest: true
