@@ -21,10 +21,4 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-  # Node.js tool installer
-# Finds or downloads and caches the specified version spec of Node.js and adds it to the PATH
-- task: NodeTool@0
-  inputs:
-    #versionSpec: '6.x' 
-    #force32bit: false # Optional
-    #checkLatest: false # Optional
+ 
