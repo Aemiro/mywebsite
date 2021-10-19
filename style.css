@@ -1,0 +1,382 @@
+body {
+  margin: 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+h1,
+p {
+  font-family: Lato;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.my-account {
+  margin-top: 20px;
+  margin-bottom: px;
+}
+.account-info {
+  margin-left: 10px;
+  width: 60%;
+}
+.accout-img {
+  width: 40%;
+}
+.navigation {
+  background-color: #5c524d;
+  margin: 0px;
+ 
+}
+.sm-hidden {
+  display: none;
+}
+.nav {
+  display: flex;
+  margin: 0px;
+  flex-direction: row;
+}
+.humberger-icon {
+  display: none;
+}
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: white;
+  outline: none;
+  border: none;
+  background-color: #5c524d;
+}
+.closebtn:hover {
+  background-color: black;
+}
+.overlap-div{
+    width: 100%;
+}
+.humberger {
+  margin-right: 10px;
+  background-color: #5c524d;
+  border: none;
+  outline: none;
+}
+
+.container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+}
+.radio-selection{
+    display: inline-flex;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.radio-box{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+.radio:checked ~ .checkmark {
+    background-color: #04aa6d;
+  }
+.config-detail{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    background-color: #c8c8c8;
+    border: 1px solid rgb(133,133,133);
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.config-title, .more-title{
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+.btn{
+    padding: .5rem;
+    margin: 1rem;
+    text-align: center;
+}
+.btn-orange{
+    background-color: orangered;
+    color: white;
+    border: orangered;
+    outline: 1px solid orangered;
+}
+.btn-orange:hover{
+    background-color: white;
+    color: orangered;;
+}
+.btn-outline{
+    outline: 1px solid orangered;
+    border: orangered;
+    color: orangered;
+}
+.btn-outline:hover{
+    color: white;
+    background-color: orangered;
+}
+.config-desc{
+    margin-top: 0px;
+}
+.humberger:hover {
+  background-color: black;
+}
+.nav-menu {
+  width: auto;
+  display: inline-flex;
+  margin-left: auto;
+
+}
+.nav-item {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-decoration: none;
+  color: white;
+  border-bottom: 3px solid #5c524d;
+}
+.nav-item:active,
+.nav-item:hover,
+.nav-item:focus {
+  border-bottom: 3px solid #04aa6d;
+}
+.buttons{
+    display: flex;
+    padding-left: 1.5rem;
+}
+.top-drawer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+}
+.logo {
+    display: flex;
+    margin-left: 2.5rem;
+}
+.mobile-nav-item {
+  padding-left: 2.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-decoration: none;
+  color: white;
+}
+.rounded:hover {
+  border-radius: 0.25rem;
+}
+.logout-icon {
+  display: none;
+}
+.logo-img {
+  width: 100%;
+  height: auto;
+  max-height: 30px;
+  margin-left: 1.5rem;
+}
+.logout-img {
+  width: 100%;
+  height: auto;
+  max-height: 12px;
+}
+.user-profile {
+  padding-left: 2.75rem;
+  align-self: flex-start;
+  display: flex;
+  padding-top: 20px;
+  flex-direction: column;
+}
+.user-info {
+  color: white;
+}
+.horizontal-line {
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+.user-img {
+  height: auto;
+  width: 4.5rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23) !important;
+  border-radius: 50%;
+  vertical-align: middle;
+  border-style: none;
+}
+.drawer {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #5c524d;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.left-menu {
+  padding-top: 60px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+
+  padding-right: 0px;
+}
+.text-center {
+  text-align: center;
+}
+
+.inline-form {
+  display: flex;
+  flex-flow: row;
+  justify-content: start;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+}
+.form-input:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-group {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.inline-form-group {
+  display: flex;
+  width: 100%;
+}
+.section-title {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 18px;
+}
+.img {
+  width: 100%;
+  height: auto;
+}
+.mobile-nav-item:hover {
+  background-color: black;
+}
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 920px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .humberger-icon {
+    display: flex;
+    flex-direction: row;
+  }
+  .container {
+    max-width: 720px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .sm-hidden {
+    display: block;
+  }
+  .logout-icon {
+    display: flex;
+    margin-left: auto;
+  }
+  .logo {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: flex-start;
+  }
+ 
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 540px;
+  }
+  .humberger-icon {
+    display: flex;
+    flex-direction: row;
+  }
+  .row {
+    display: block;
+  }
+  .my-account {
+    flex-direction: column;
+  }
+  .accout-info {
+    margin-left: 10px;
+    width: 100%;
+  }
+  .accout-img {
+    width: 100%;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .sm-hidden {
+    display: block;
+  }
+  .logout-icon {
+    display: flex;
+    margin-left: auto;
+  }
+  .logo {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: flex-start;
+  }
+  .buttons{
+      display: flex;
+      flex-direction: column;
+  }
+  .btn{
+      width: 100%;
+  }
+  .account-info{
+      width: 100%;
+  }
+  .inline-form {
+      flex-direction: column;
+  }
+ 
+}
